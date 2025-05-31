@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal.js Deck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+  <!-- Pick any theme you like (beige, serif, black, league, night, etc.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/serif.css" id="theme" />
+
+  <!-- Optional: custom overrides -->
+  <style>
+    /* Example: centre headings vertically */
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1 -->
+      <section>
+        <h1>Hello, Reveal.js!</h1>
+        <p>Press <kbd>&larr;</kbd>/<kbd>&rarr;</kbd> or swipe to navigate.</p>
+      </section>
+
+      <!-- Slide 2 (with vertical child slides) -->
+      <section>
+        <h2>Nested slides</h2>
+        <section>
+          <p>First vertical child</p>
+        </section>
+        <section>
+          <p>Second vertical child</p>
+        </section>
+      </section>
+
+      <!-- Slide 3 written in inline Markdown -->
+      <section data-markdown>
+<!--
+## Markdown slide
+
+- Bullet *one*
+- Bullet **two**
+- Bullet ~~three~~
+-->
+      </section>
+
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from "https://cdn.jsdelivr.net/npm/reveal.js@5/+esm";
+    import Markdown from "https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.esm.js";
+    import Highlight from "https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.esm.js";
+
+    const deck = new Reveal({
+      hash: true,         // Enables URL navigation e.g. #/2/1
+      slideNumber: true,  // Shows slide numbers 1.2, 2.3, etc.
+      plugins: [Markdown, Highlight]
+    });
+
+    deck.initialize();
+  </script>
+</body>
+</html>
