@@ -1,0 +1,159 @@
+/* Tarot card styling */
+.tarot-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tarot-card {
+  position: absolute;
+  width: 254px;
+  height: 387px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f9f2e8;
+  backface-visibility: hidden;
+  transform-origin: center bottom;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -300px;
+  transition: all 1.5s cubic-bezier(0.33, 1, 0.68, 1);
+  overflow: hidden;
+}
+
+.tarot-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.tarot-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarot-title {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.tarot-subtitle {
+  text-align: center;
+  font-style: italic;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+  transition-delay: 0.5s;
+}
+
+.fragment.visible .tarot-title,
+.fragment.visible .tarot-subtitle {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fragment.visible .tarot-card:nth-child(1) {
+  transform: translate(-220px, 20px) rotate(-15deg);
+  opacity: 1;
+  transition-delay: 1s;
+}
+
+.fragment.visible .tarot-card:nth-child(2) {
+  transform: translate(-110px, -20px) rotate(-5deg);
+  opacity: 1;
+  transition-delay: 1.3s;
+}
+
+.fragment.visible .tarot-card:nth-child(3) {
+  transform: translate(0, -60px) rotate(0deg);
+  opacity: 1;
+  transition-delay: 1.6s;
+  z-index: 3;
+}
+
+.fragment.visible .tarot-card:nth-child(4) {
+  transform: translate(110px, -20px) rotate(5deg);
+  opacity: 1;
+  transition-delay: 1.9s;
+}
+
+.fragment.visible .tarot-card:nth-child(5) {
+  transform: translate(220px, 20px) rotate(15deg);
+  opacity: 1;
+  transition-delay: 2.2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* .fragment.visible .tarot-card {
+      animation: float 6s ease-in-out infinite;
+      animation-delay: 3s;
+    } */
+
+/* Tarot stack animation for regrouping */
+.tarot-stack .tarot-card:nth-child(1) {
+  transform: translate(0, 0) rotate(-15deg) !important;
+  opacity: 1;
+  transition-delay: 0.2s;
+  z-index: 1;
+}
+.tarot-stack .tarot-card:nth-child(2) {
+  transform: translate(0, 0) rotate(-5deg) !important;
+  opacity: 1;
+  transition-delay: 0.3s;
+  z-index: 2;
+}
+.tarot-stack .tarot-card:nth-child(3) {
+  transform: translate(0, 0) rotate(0deg) !important;
+  opacity: 1;
+  transition-delay: 0.4s;
+  z-index: 3;
+}
+.tarot-stack .tarot-card:nth-child(4) {
+  transform: translate(0, 0) rotate(5deg) !important;
+  opacity: 1;
+  transition-delay: 0.5s;
+  z-index: 4;
+}
+.tarot-stack .tarot-card:nth-child(5) {
+  transform: translate(0, 0) rotate(15deg) !important;
+  opacity: 1;
+  transition-delay: 0.6s;
+  z-index: 5;
+}
+.tarot-stack .tarot-card {
+  animation: none !important;
+}
+.tarot-stack .tarot-card.fade-out {
+  opacity: 0 !important;
+  transition: opacity 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+}
+/* .tarot-empress-fadein {
+      opacity: 0;
+      animation: empress-fadein 1s 0.7s forwards;
+    }
+    @keyframes empress-fadein {
+      to { opacity: 1; }
+    } */

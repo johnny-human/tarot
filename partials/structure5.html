@@ -1,0 +1,62 @@
+<div class="card">
+    <div class="card-anim">
+        <img src="images/Structure5.png" alt="V of Structure – Layering">
+    </div>
+
+    <div class="card-content">
+        <div class="card-header">
+            <h2>V · Structure · Layering</h2>
+            <p><strong>Theme (quick cue):</strong><br> Separation of
+                concerns</p>
+        </div>
+
+        <div class="principle">
+            <p>
+                Layering places each responsibility in its proper stratum so
+                information flows downward and policy
+                bubbles upward without shortcut tunnels. Presentation speaks to
+                application services, which consult domain
+                logic, which delegate persistence to infrastructure. Clear entry
+                points let you swap databases, refactor UI
+                frameworks, or introduce new interfaces without open-heart
+                surgery on the core. Explicit boundaries shrink
+                cognitive load, enable parallel work, and provide natural seams
+                for automated testing, security controls,
+                and deployment pipelines. When a layer breaks its contract,
+                ripple effects are obvious and repairable. Good
+                layering curbs accidental coupling while still allowing
+                just-enough communication through well-designed
+                ports and adapters.
+            </p>
+        </div>
+
+        <!-- two major arcana cards most relevant -->
+        <div class="major">
+            <p>
+                <span class="card_img">
+                    <img src="images/Major1.png" alt>
+                </span>
+                <strong>The Architect</strong> — With Layering, The Architect
+                surveys the elevation plan, ensuring each
+                tier expresses a single concern and no beam bears hidden weight.
+                Vision and balance turn the stack into a
+                cathedral, not a tower of patch cords, guiding newcomers up
+                orderly flights of abstraction.
+            </p>
+        </div>
+
+        <div class="major">
+            <p>
+                <span class="card_img">
+                    <img src="images/Major13.png" alt>
+                </span><strong>The Governance</strong> — Layer boundaries are
+                the guardrails of The Governance, converting
+                policy into code by forbidding sideways calls and backdoor data
+                leaks. Standards for crossing
+                layers—DTOs, APIs, events—make compliance auditable and change
+                approvals quick, proving that freedom thrives
+                within clear, enforceable borders.
+            </p>
+        </div>
+    </div>
+</div>

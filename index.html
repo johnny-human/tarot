@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Reveal.js Deck</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <title>Reveal.js Deck</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Core stylesheets -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
-  <!-- Pick any theme you like (beige, serif, black, league, night, etc.) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/serif.css" id="theme" />
+        <!-- Core stylesheets -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+        <!-- Pick any theme you like (beige, serif, black, league, night, etc.) -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/serif.css"
+            id="theme" />
 
-  <!-- Optional: custom overrides -->
-  <style>
+        <!-- Optional: custom overrides -->
+        <style>
     /* Example: centre headings vertically */
     section {
       display: flex;
@@ -19,55 +22,463 @@
       justify-content: center;
       flex-direction: column;
     }
+    
+
   </style>
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
 
-      <!-- Slide 1 -->
-      <section>
-        <h1>Hello, Reveal.js!</h1>
-        <p>Press <kbd>&larr;</kbd>/<kbd>&rarr;</kbd> or swipe to navigate.</p>
-      </section>
+        <link rel="stylesheet" href="slide1.css" />
+        <link rel="stylesheet" href="suits.css" />
+        <link rel="stylesheet" href="major.css" />
+        <link rel="stylesheet" href="minor.css" />
+        <link rel="stylesheet" href="spread.css" />
 
-      <!-- Slide 2 (with vertical child slides) -->
-      <section>
-        <h2>Nested slides</h2>
-        <section>
-          <p>First vertical child</p>
-        </section>
-        <section>
-          <p>Second vertical child</p>
-        </section>
-      </section>
+        <!-- Add Cinzel font for a mystical look -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
 
-      <!-- Slide 3 written in inline Markdown -->
-      <section data-markdown>
-<!--
-## Markdown slide
+                <!-- Slide 1 -->
+                <section>
+                    <h1>The Architect's Arcana</h1>
+                    <p>Unveiling Software Architecture Principles Through
+                        Tarot</p>
+                </section>
 
-- Bullet *one*
-- Bullet **two**
-- Bullet ~~three~~
--->
-      </section>
+                <!-- Slide 2 (with vertical child slides) -->
+                <section>
 
-    </div>
-  </div>
+                    <section class="tarot-slide">
+                        <div class="fragment">
+                            <h2 class="tarot-title">The Architect's Arcana</h2>
+                            <p class="tarot-subtitle">Divine wisdom for software
+                                architecture</p>
+                            <div class="tarot-container">
+                                <div class="tarot-card">
+                                    <img src="images/Major6.png"
+                                        alt="The Phoenix">
+                                </div>
+                                <div class="tarot-card">
+                                    <img src="images/Major3.png"
+                                        alt="The Prototype">
+                                </div>
+                                <div class="tarot-card">
+                                    <img src="images/Major1.png"
+                                        alt="The Architect">
+                                </div>
+                                <div class="tarot-card">
+                                    <img src="images/Major2.png"
+                                        alt="The Legacy">
+                                </div>
+                                <div class="tarot-card">
+                                    <img src="images/Major5.png"
+                                        alt="The Vision">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 
+                MARK: Majors
+                 -->
+                    <section include-html="partials/major0.html"></section>
+                    <section include-html="partials/major1.html"></section>
+                    <section include-html="partials/major2.html"></section>
+                    <section include-html="partials/major3.html"></section>
+                    <section include-html="partials/major4.html"></section>
+                    <section include-html="partials/major5.html"></section>
+                    <section include-html="partials/major6.html"></section>
+                    <section include-html="partials/major7.html"></section>
+                    <section include-html="partials/major8.html"></section>
+                    <section include-html="partials/major9.html"></section>
+                    <section include-html="partials/major10.html"></section>
+                    <section include-html="partials/major11.html"></section>
+                    <section include-html="partials/major12.html"></section>
+                    <section include-html="partials/major13.html"></section>
+                    <section include-html="partials/major14.html"></section>
+                    <section include-html="partials/major15.html"></section>
+                    <section include-html="partials/major16.html"></section>
+                    <section include-html="partials/major17.html"></section>
+                    <section include-html="partials/major18.html"></section>
+                    <section include-html="partials/major19.html"></section>
+                    <section include-html="partials/major20.html"></section>
+                    <section include-html="partials/major21.html"></section>
+                    <section include-html="partials/major22.html"></section>
 
-  <script type="module">
-    import Reveal from "https://cdn.jsdelivr.net/npm/reveal.js@5/+esm";
-    import Markdown from "https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.esm.js";
-    import Highlight from "https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.esm.js";
+                </section>
+                <!-- 
+                MARK: Suit of Structure 
+                 -->
+                <section>
+                    <section>
+                        <h2 class="suit-title">The Suit of Structure</h2>
+                        <div class="suit-cards-row">
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-18deg"><img
+                                    src="images/Structure1.png"
+                                    alt="Card 1"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-14deg"><img
+                                    src="images/Structure2.png"
+                                    alt="Card 2"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-10deg"><img
+                                    src="images/Structure3.png"
+                                    alt="Card 3"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-6deg"><img
+                                    src="images/Structure4.png"
+                                    alt="Card 4"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-2deg"><img
+                                    src="images/Structure5.png"
+                                    alt="Card 5"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:2deg"><img
+                                    src="images/Structure6.png"
+                                    alt="Card 6"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:6deg"><img
+                                    src="images/Structure7.png"
+                                    alt="Card 7"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:10deg"><img
+                                    src="images/Structure8.png"
+                                    alt="Card 8"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:14deg"><img
+                                    src="images/Structure9.png"
+                                    alt="Card 9"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:18deg"><img
+                                    src="images/Structure10.png"
+                                    alt="Card 10"></div>
+                        </div>
+                        <div class="suit-description">
+                            <strong>The Suit of Structure</strong> represents
+                            the foundation, order, and frameworks that support
+                            all great software. These cards reveal the patterns,
+                            principles, and architectural wisdom that bring
+                            stability and clarity to complex systems. Drawing
+                            from this suit, architects find the guidance to
+                            build resilient, scalable, and elegant solutions.
+                        </div>
+                    </section>
 
-    const deck = new Reveal({
-      hash: true,         // Enables URL navigation e.g. #/2/1
-      slideNumber: true,  // Shows slide numbers 1.2, 2.3, etc.
-      plugins: [Markdown, Highlight]
+                    <section include-html="partials/structure1.html"></section>
+                    <section include-html="partials/structure2.html"></section>
+                    <section include-html="partials/structure3.html"></section>
+                    <section include-html="partials/structure4.html"></section>
+                    <section include-html="partials/structure5.html"></section>
+                    <section include-html="partials/structure6.html"></section>
+                    <section include-html="partials/structure7.html"></section>
+                    <section include-html="partials/structure8.html"></section>
+                    <section include-html="partials/structure9.html"></section>
+                    <section include-html="partials/structure10.html"></section>
+                </section>
+                <!-- 
+                MARK: Suit of Flow 
+                 -->
+                <section>
+                    <section>
+                        <h2 class="suit-title">The Suit of Flow</h2>
+                        <div class="suit-cards-row">
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-18deg"><img
+                                    src="images/Flow1.png"
+                                    alt="Card 1"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-14deg"><img
+                                    src="images/Flow2.png"
+                                    alt="Card 2"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-10deg"><img
+                                    src="images/Flow3.png"
+                                    alt="Card 3"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-6deg"><img
+                                    src="images/Flow4.png"
+                                    alt="Card 4"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-2deg"><img
+                                    src="images/Flow5.png"
+                                    alt="Card 5"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:2deg"><img
+                                    src="images/Flow6.png"
+                                    alt="Card 6"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:6deg"><img
+                                    src="images/Flow7.png"
+                                    alt="Card 7"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:10deg"><img
+                                    src="images/Flow8.png"
+                                    alt="Card 8"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:14deg"><img
+                                    src="images/Flow9.png"
+                                    alt="Card 9"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:18deg"><img
+                                    src="images/Flow10.png"
+                                    alt="Card 10"></div>
+                        </div>
+                        <div class="suit-description">
+                            <strong>The Suit of Flow</strong> represents
+                            the foundation, order, and frameworks that support
+                            all great software. These cards reveal the patterns,
+                            principles, and architectural wisdom that bring
+                            stability and clarity to complex systems. Drawing
+                            from this suit, architects find the guidance to
+                            build resilient, scalable, and elegant solutions.
+                        </div>
+                    </section>
+
+                    <section include-html="partials/flow1.html"></section>
+                    <section include-html="partials/flow2.html"></section>
+                    <section include-html="partials/flow3.html"></section>
+                    <section include-html="partials/flow4.html"></section>
+                    <section include-html="partials/flow5.html"></section>
+                    <section include-html="partials/flow6.html"></section>
+                    <section include-html="partials/flow7.html"></section>
+                    <section include-html="partials/flow8.html"></section>
+                    <section include-html="partials/flow9.html"></section>
+                    <section include-html="partials/flow10.html"></section>
+                </section>
+                <!-- 
+                MARK: Suit of Risk 
+                 -->
+                <section>
+                    <section>
+                        <h2 class="suit-title">The Suit of Risk</h2>
+                        <div class="suit-cards-row">
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-18deg"><img
+                                    src="images/Risk1.png"
+                                    alt="Card 1"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-14deg"><img
+                                    src="images/Risk2.png"
+                                    alt="Card 2"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-10deg"><img
+                                    src="images/Risk3.png"
+                                    alt="Card 3"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-6deg"><img
+                                    src="images/Risk4.png"
+                                    alt="Card 4"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-2deg"><img
+                                    src="images/Risk5.png"
+                                    alt="Card 5"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:2deg"><img
+                                    src="images/Risk6.png"
+                                    alt="Card 6"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:6deg"><img
+                                    src="images/Risk7.png"
+                                    alt="Card 7"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:10deg"><img
+                                    src="images/Risk8.png"
+                                    alt="Card 8"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:14deg"><img
+                                    src="images/Risk9.png"
+                                    alt="Card 9"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:18deg"><img
+                                    src="images/Risk10.png"
+                                    alt="Card 10"></div>
+                        </div>
+                        <div class="suit-description">
+                            <strong>The Suit of Risk</strong> represents
+                            the foundation, order, and frameworks that support
+                            all great software. These cards reveal the patterns,
+                            principles, and architectural wisdom that bring
+                            stability and clarity to complex systems. Drawing
+                            from this suit, architects find the guidance to
+                            build resilient, scalable, and elegant solutions.
+                        </div>
+                    </section>
+
+                    <section include-html="partials/risk1.html"></section>
+                    <section include-html="partials/risk2.html"></section>
+                    <section include-html="partials/risk3.html"></section>
+                    <section include-html="partials/risk4.html"></section>
+                    <section include-html="partials/risk5.html"></section>
+                    <section include-html="partials/risk6.html"></section>
+                    <section include-html="partials/risk7.html"></section>
+                    <section include-html="partials/risk8.html"></section>
+                    <section include-html="partials/risk9.html"></section>
+                    <section include-html="partials/risk10.html"></section>
+                </section>
+                <!-- 
+                MARK: Suit of Change 
+                 -->
+                <section><section>
+                        <h2 class="suit-title">The Suit of Change</h2>
+                        <div class="suit-cards-row">
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-18deg"><img
+                                    src="images/Change1.png"
+                                    alt="Card 1"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-14deg"><img
+                                    src="images/Change2.png"
+                                    alt="Card 2"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-10deg"><img
+                                    src="images/Change3.png"
+                                    alt="Card 3"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-6deg"><img
+                                    src="images/Change4.png"
+                                    alt="Card 4"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:-2deg"><img
+                                    src="images/Change5.png"
+                                    alt="Card 5"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:2deg"><img
+                                    src="images/Change6.png"
+                                    alt="Card 6"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:6deg"><img
+                                    src="images/Change7.png"
+                                    alt="Card 7"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:10deg"><img
+                                    src="images/Change8.png"
+                                    alt="Card 8"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:14deg"><img
+                                    src="images/Change9.png"
+                                    alt="Card 9"></div>
+                            <div class="suit-card suit-card-reveal"
+                                style="--angle:18deg"><img
+                                    src="images/Change10.png"
+                                    alt="Card 10"></div>
+                        </div>
+                        <div class="suit-description">
+                            <strong>The Suit of Change</strong> represents
+                            the foundation, order, and frameworks that support
+                            all great software. These cards reveal the patterns,
+                            principles, and architectural wisdom that bring
+                            stability and clarity to complex systems. Drawing
+                            from this suit, architects find the guidance to
+                            build resilient, scalable, and elegant solutions.
+                        </div>
+                    </section>
+                    <section include-html="partials/change1.html"></section>
+                    <section include-html="partials/change2.html"></section>
+                    <section include-html="partials/change3.html"></section>
+                    <section include-html="partials/change4.html"></section>
+                    <section include-html="partials/change5.html"></section>
+                    <section include-html="partials/change6.html"></section>
+                    <section include-html="partials/change7.html"></section>
+                    <section include-html="partials/change8.html"></section>
+                    <section include-html="partials/change9.html"></section>
+                    <section include-html="partials/change10.html"></section>
+                </section>
+
+                <section
+                    include-html="partials/product-lifecycle1.html"></section>
+                <section
+                    include-html="partials/product-lifecycle2.html"></section>
+
+                <section include-html="partials/spread1.html"></section>
+                <section include-html="partials/spread2.html"></section>
+                <section include-html="partials/spread3.html"></section>
+                <section include-html="partials/spread4.html"></section>
+            </div>
+        </div> <script>
+function includeHTML(callback) {
+  const elements = document.querySelectorAll('[include-html]');
+  let remaining = elements.length;
+  
+  if (remaining === 0) {
+    callback();
+    return;
+  }
+
+  console.log(`Loading ${remaining} partial files...`);
+  
+  // Process includes in batches to avoid overwhelming the server
+  const BATCH_SIZE = 5;
+  const DELAY_BETWEEN_BATCHES = 100; // ms
+  
+  async function processBatch(startIndex) {
+    const batch = Array.from(elements).slice(startIndex, startIndex + BATCH_SIZE);
+      const promises = batch.map(el => {
+      const file = el.getAttribute('include-html');
+      if (file) {
+        // Add cache-busting parameter
+        const cacheBustedUrl = file + (file.includes('?') ? '&' : '?') + '_t=' + Date.now();
+        return fetch(cacheBustedUrl)
+          .then(response => {
+            if (!response.ok) {
+              console.warn(`Failed to load ${file}: ${response.status}`);
+              return `<!-- Failed to load ${file} -->`;
+            }
+            return response.text();
+          })
+          .then(data => {
+            el.innerHTML = data;
+            el.removeAttribute('include-html');
+            console.log(`Loaded: ${file}`);
+          })
+          .catch(error => {
+            console.error(`Error loading ${file}:`, error);
+            el.innerHTML = `<!-- Error loading ${file} -->`;
+            el.removeAttribute('include-html');
+          });
+      }
+      return Promise.resolve();
     });
+    
+    await Promise.all(promises);
+    remaining -= batch.length;
+    
+    if (remaining > 0) {
+      // Wait a bit before processing next batch
+      await new Promise(resolve => setTimeout(resolve, DELAY_BETWEEN_BATCHES));
+      await processBatch(startIndex + BATCH_SIZE);
+    } else {
+      // All done, check for nested includes
+      const nestedElements = document.querySelectorAll('[include-html]');
+      if (nestedElements.length > 0) {
+        includeHTML(callback);
+      } else {
+        console.log('All partials loaded successfully!');
+        callback();
+      }
+    }
+  }
+  
+  processBatch(0);
+}
 
-    deck.initialize();
-  </script>
-</body>
+// Only initialize Reveal after all includes are loaded
+includeHTML(() => {
+  import("https://cdn.jsdelivr.net/npm/reveal.js@5/+esm").then(({ default: Reveal }) => {
+    import("https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.esm.js").then(({ default: Markdown }) => {
+      import("https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.esm.js").then(({ default: Highlight }) => {
+        const deck = new Reveal({
+          hash: true,
+          slideNumber: true,
+          plugins: [Markdown, Highlight]
+        });
+        deck.initialize();
+      });
+    });
+  });
+});
+</script>
+    </body>
 </html>

@@ -1,0 +1,209 @@
+/* Major Arcana · I The Architect slide styling - updated for smaller text and larger, more left-aligned card */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  min-height: 60vh;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 32px 0 rgba(60, 40, 20, 0.1);
+  position: relative;
+}
+
+/* Title styling */
+.card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  padding-top: 0.5em;
+}
+.card-header h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1.1em;
+  margin-bottom: 0.1em;
+  color: #3d2c1e;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.card-header p {
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+/* Animated tarot card on the left */
+.card-anim {
+  flex: 0 0 320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 4.5em;
+  margin-right: 2.5rem;
+  margin-left: 0.5rem;
+  animation: floatUpDown 3.5s ease-in-out infinite alternate;
+  z-index: 1;
+}
+.card-anim img {
+  width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(60, 40, 20, 0.18);
+  background: #fff;
+}
+
+/* Floating animation */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-24px);
+  }
+}
+
+/* Text content on the right */
+.card-content {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.58em;
+  color: #2d2d2d;
+  max-width: 620px;
+  margin-top: 2.5em;
+  text-align: left;
+}
+
+.card-header p,
+.principle p,
+.structure p,
+.flow p,
+.risk p,
+.change p {
+  font-size: 0.62em;
+  line-height: 1.3em;
+  margin-top: 8px;
+  color: #3d2c1e;
+}
+
+.card-header strong {
+  color: #7a5c2e;
+}
+
+/* Element crop for icons */
+.element-earth {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  vertical-align: bottom;
+  position: relative;
+  margin-bottom: -6px;
+}
+.element-earth img {
+  width: 64px;
+  height: 64px;
+  object-position: left bottom;
+  transform: translateY(-32px);
+  display: block;
+  max-width: none;
+  max-height: none;
+  margin: 0 auto;
+}
+
+.element-air {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  vertical-align: bottom;
+  position: relative;
+  margin-bottom: -6px;
+  margin-right: -4px;
+  margin-left: 4px;
+}
+.element-air img {
+  width: 64px;
+  height: 64px;
+  object-position: right bottom;
+  transform: translate3d(-32px, -32px, 0);
+  display: block;
+  max-width: none;
+  max-height: none;
+  margin: 0 auto;
+}
+
+.element-water {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -4px;
+}
+.element-water img {
+  width: 64px;
+  height: 64px;
+  object-position: left top;
+  display: block;
+  max-width: none;
+  max-height: none;
+  margin: 0 auto;
+}
+
+.element-fire {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -4px;
+  margin-right: -4px;
+  margin-left: 4px;
+}
+.element-fire img {
+  width: 64px;
+  height: 64px;
+  object-position: right top;
+  transform: translateX(-32px);
+  display: block;
+  max-width: none;
+  max-height: none;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .card-header {
+    position: static;
+    padding-top: 0;
+  }
+  .card-anim {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 1.2em;
+    margin-bottom: 1.2rem;
+    flex-basis: 220px;
+  }
+  .card-anim img {
+    width: 180px;
+  }
+  .card-content {
+    max-width: 98vw;
+    font-size: 0.62em;
+    margin-top: 1.5em;
+  }
+  .card-header h2 {
+    font-size: 0.9em;
+  }
+}

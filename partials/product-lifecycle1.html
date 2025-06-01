@@ -1,0 +1,193 @@
+<!-- filepath: d:\tarot\partials\product-lifecycle.html -->
+
+<style>
+.spread-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80vh;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 32px 0 rgba(60, 40, 20, 0.1);
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+}
+
+.spread-title {
+  font-family: "Cinzel", serif;
+  font-size: 0.9em !important;
+  margin-bottom: 0.2rem;
+  color: #3d2c1e;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-spread {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem 0;
+  perspective: 1000px;
+  min-height: 300px;
+}
+
+.spread-card {
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spread-card img {
+  width: 140px;
+  height: auto;
+  border-radius: 0.4rem;
+  box-shadow: 0 8px 24px 0 rgba(60, 40, 20, 0.2);
+  background: #fff;
+}
+
+.card-label {
+  font-family: sans-serif;
+  font-size: 0.4em;
+  color: #000000;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: normal;
+  max-width: 140px;
+  line-height: 1.2;
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.6s ease-out;
+}
+
+.card-label.fragment.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.spread-card:hover {
+  transform: translateY(-20px) scale(1.05);
+  z-index: 10;
+}
+
+/* 5-card spread transformations - straight alignment */
+.five-card-spread .spread-card {
+  transform: rotate(0deg) translateY(0px);
+  z-index: 2;
+}
+
+/* 6-card spread transformations - straight alignment */
+.six-card-spread .spread-card {
+  transform: rotate(0deg) translateY(0px);
+  z-index: 2;
+}
+
+/* Arrow styling between cards */
+.progress-arrow {
+  display: inline-block;
+  font-size: 0.9em;
+  color: #7a5c2e;
+  margin: 0 1px;
+  vertical-align: middle;
+  opacity: 0.7;
+  animation: pulse 2s ease-in-out infinite alternate;
+  align-self: flex-start;
+  margin-top: 100px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+}
+
+.spread-placeholder {
+  background: rgba(250, 245, 235, 0.8);
+  border: 2px dashed #d4b896;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  max-width: 600px;
+  text-align: center;
+  color: #7a5c2e;
+  font-style: italic;
+  font-size: 0.6em !important;
+  line-height: 1.4;
+}
+
+.fragment {
+  margin: 3rem 0;
+}
+
+@media (max-width: 900px) {
+  .spread-card img {
+    width: 100px;
+  }
+  
+  .card-spread {
+    gap: 15px;
+    min-height: 250px;
+  }
+    .progress-arrow {
+    font-size: 0.8em;
+    margin: 0 5px;
+    margin-top: 50px;
+  }.card-label {
+    font-size: 0.35em;
+    max-width: 100px;
+    min-height: 2.1em;
+  }
+
+}
+</style>
+
+<div class="spread-container">
+    <h1 class="spread-title">Product Lifecycle Spread</h1>
+    <h3 class>Greenfield Startup</h3> <!-- 5-card spread -->
+    <div class="card-spread five-card-spread">
+        <div class="spread-card">
+            <img src="images/Major5.png" alt="The Vision">
+            <div class="card-label fragment" data-fragment-index="1">Core
+                purpose & value hypothesis</div>
+        </div>
+        <div class="progress-arrow">→</div>
+        <div class="spread-card">
+            <img src="images/Major3.png" alt="The Prototype">
+            <div class="card-label fragment" data-fragment-index="1">Rapid
+                learning loop</div>
+        </div>
+        <div class="progress-arrow">→</div>
+        <div class="spread-card">
+            <img src="images/Major1.png" alt="The Architect">
+            <div class="card-label fragment"
+                data-fragment-index="1">Foundational design guard-rails</div>
+        </div>
+        <div class="progress-arrow">→</div>
+        <div class="spread-card">
+            <img src="images/Major19.png" alt="The Pipeline">
+            <div class="card-label fragment" data-fragment-index="1">Minimum
+                viable delivery flow</div>
+        </div>
+        <div class="progress-arrow">→</div>
+        <div class="spread-card">
+            <img src="images/Major18.png" alt="The Risk">
+            <div class="card-label fragment" data-fragment-index="1">Early risk
+                scan</div>
+        </div>
+    </div>
+
+</div>

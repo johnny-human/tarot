@@ -1,0 +1,61 @@
+<div class="card">
+    <div class="card-anim">
+        <img src="images/Structure10.png"
+            alt="X of Structure – Hexagonal Architecture">
+    </div>
+
+    <div class="card-content">
+        <div class="card-header">
+            <h2>X · Structure · Hexagonal Architecture</h2>
+            <p><strong>Theme (quick cue):</strong><br>
+                Ports & adapters isolate domain logic
+            </p>
+        </div>
+
+        <div class="principle">
+            <p>
+                Hexagonal Architecture seats pure business rules at the centre
+                and surrounds them with “ports” that declare
+                everything the core needs from the outside world. Concrete
+                technologies—databases, message buses, UIs, vendor
+                APIs—arrive later as “adapters” that plug into those ports
+                without poking holes in the domain. The pattern
+                invites fast, in-memory testing, easy tech swaps, and parallel
+                team work: one squad can craft adapters while
+                another evolves the core without merge-storm collisions. By
+                inverting dependencies, it shrinks blast radius,
+                clarifies ownership, and lets the code express business truth
+                instead of framework trivia—ideal for evolving
+                products and regulated systems alike.
+            </p>
+        </div>
+
+        <!-- two major arcana cards most relevant -->
+        <div class="major">
+            <p>
+                <span class="card_img">
+                    <img src="images/Major14.png" alt>
+                </span>
+                <strong>The Container</strong> — Like a well-built container
+                image, hexagonal boundaries package the domain,
+                promise reproducibility, and keep noisy neighbours out. They
+                remind us that runtime details may change, but a
+                sealed contract preserves portability and trust across every
+                cluster we deploy.
+            </p>
+        </div>
+
+        <div class="major">
+            <p>
+                <span class="card_img">
+                    <img src="images/Major1.png" alt>
+                </span><strong>The Architect</strong> — This card asks: have you
+                drawn ports that mirror the business language
+                or the framework manual? True vision balances clarity with
+                flexibility, ensuring adapters serve strategy rather
+                than dictating it. The Architect blesses designs where policy
+                never leaks protocol.
+            </p>
+        </div>
+    </div>
+</div>

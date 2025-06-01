@@ -1,0 +1,92 @@
+<div class="card">
+    <div class="card-anim">
+        <img src="images/Major14.png"
+            alt="The Container">
+    </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h2>XIV · The Container</h2>
+            <p><strong>Theme (quick cue):</strong><br>
+                Isolation, reproducibility, packaging</p>
+            <p><strong>Element / Suit:</strong><br>
+                Earth — Structure</p>
+        </div>
+
+        <div class="principle">
+            <p>
+                The Container represents the architectural practice of bundling
+                code, runtime, and dependencies into a portable, self-sufficient
+                unit. By standardising interfaces and isolating resource
+                consumption, containers decouple application concerns from
+                underlying infrastructure, allowing architects to treat
+                execution environments as replaceable commodities. This
+                abstraction enables consistent behaviour from laptop to cloud
+                cluster, simplifies scaling strategies, and shortens feedback
+                loops by eliminating “works on my machine” drift. Yet the card
+                also reminds us that isolation is not isolationism:
+                observability, security, and orchestration policies must pierce
+                the shell in carefully controlled ways so that the system
+                remains comprehensible, compliant, and resilient in production
+                and beyond.
+            </p>
+        </div>
+
+        <!-- suit-specific reflections -->
+        <div class="structure">
+            <p>
+                <span class="element-earth">
+                    <img src="images/elements.jpg"
+                        alt="Earth icon">
+                </span>
+                Structure (Earth) — Container images impose clear boundaries on
+                filesystem layout, network ports, and resource quotas. This
+                structural discipline turns deployment artifacts into
+                predictable Lego bricks, easing reproducibility, compliance
+                scanning, and policy enforcement across every environment.
+            </p>
+        </div>
+
+        <div class="flow">
+            <p>
+                <span class="element-water">
+                    <img src="images/elements.jpg"
+                        alt="Water icon">
+                </span>
+                Flow (Water) — Build-once, run-anywhere pipelines stream
+                container artifacts through staging gates without
+                reconfiguration. Teams hand off immutable tags instead of
+                environment checklists, shrinking hand-over friction and
+                enabling canary releases, parallel A/B experiments, and rapid
+                rollback via simple image reversion.
+            </p>
+        </div>
+
+        <div class="risk">
+            <p>
+                <span class="element-fire">
+                    <img src="images/elements.jpg"
+                        alt="Fire icon">
+                </span>
+                Risk (Fire) — Isolation reduces blast radius, yet it can lull
+                teams into false security. An outdated base image may harbor
+                critical CVEs; orchestrator misconfigurations expose secrets.
+                Continuous vulnerability scans and least-privilege runtime
+                policies keep the flame contained.
+            </p>
+        </div>
+
+        <div class="change">
+            <p>
+                <span class="element-air">
+                    <img src="images/elements.jpg"
+                        alt="Air icon">
+                </span>
+                Change (Air) — Because containers abstract operating systems,
+                swapping infrastructure becomes an operational refactor instead
+                of a rewrite. Architects can migrate workloads from on-prem VMs
+                to serverless Fargate, adjust CPU profiles, or experiment with
+                edge nodes, all through declarative manifests.
+            </p>
+        </div>
+    </div>
+</div>
